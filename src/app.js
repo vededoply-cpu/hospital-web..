@@ -503,7 +503,7 @@ window.openRuaModal = function(initialQuery = '') {
             ${initialQuery}
           </div>
           <div style="background:white; border:1px solid #e2e8f0; padding:10px 14px; border-radius:10px; max-width:85%; font-size:0.88rem;">
-            Great question regarding <strong>"${initialQuery}"</strong>! Anmol Health Care partners with top JCI/NABH hospitals (such as Apollo, Medanta, Fortis). We issue official e-Medical Visa Invitation Letters within 24 hours and arrange free cost estimates. Would you like to connect with a senior hospital coordinator on WhatsApp?
+            Great question regarding <strong>"${initialQuery}"</strong>! ANMOL CARE partners with top JCI/NABH hospitals (such as Apollo, Medanta, Fortis). We issue official e-Medical Visa Invitation Letters within 24 hours and arrange free cost estimates. Would you like to connect with a senior hospital coordinator on WhatsApp?
           </div>
         ` : ''}
       </div>
@@ -532,7 +532,7 @@ window.handleChatSubmit = function(e) {
       ${val}
     </div>
     <div style="background:white; border:1px solid #e2e8f0; padding:10px 14px; border-radius:10px; max-width:85%; font-size:0.88rem;">
-      Thank you for asking about "${val}". I have transferred your request to our Anmol Health Care medical desk. A care coordinator will provide you with doctor options and an itemized cost estimate shortly!
+      Thank you for asking about "${val}". I have transferred your request to our ANMOL CARE medical desk. A care coordinator will provide you with doctor options and an itemized cost estimate shortly!
     </div>
   `;
   box.scrollTop = box.scrollHeight;
@@ -569,9 +569,9 @@ window.openPlanModal = function(topic = 'Medical Treatment') {
 };
 
 window.openWhatsAppModal = function(destName = '') {
-  showToast(`Connecting you to WhatsApp Anmol Health Care Desk for ${destName}...`);
+  showToast(`Connecting you to WhatsApp ANMOL CARE Desk for ${destName}...`);
   setTimeout(() => {
-    alert(`[WhatsApp Action Simulated]\n\nHi! Thank you for contacting Anmol Health Care. Our senior coordinator is reviewing your request for ${destName}. You will receive top doctor profiles and cost estimates within 30 minutes!`);
+    alert(`[WhatsApp Action Simulated]\n\nHi! Thank you for contacting ANMOL CARE. Our senior coordinator is reviewing your request for ${destName}. You will receive top doctor profiles and cost estimates within 30 minutes!`);
   }, 400);
 };
 

@@ -338,7 +338,7 @@ export const SPECIALITIES = [
 export const VIDEO_STORIES = [
   {
     id: "story-1",
-    title: "HOW ANMOL HEALTH CARE HELPED SCOLIOSIS PATIENT'S LIFE..!",
+    title: "HOW ANMOL CARE HELPED SCOLIOSIS PATIENT'S LIFE..!",
     patientName: "Rubel Sheikh",
     patientCountry: "Bangladesh",
     procedure: "Complex Scoliosis Spine Surgery",
@@ -347,7 +347,7 @@ export const VIDEO_STORIES = [
     duration: "04:15",
     badge: "Spine Surgery Success",
     rating: 5.0,
-    quote: "I was unable to walk upright for 5 years due to severe scoliosis. Anmol Health Care arranged everything from visa to Dr. Vaishya's schedule. Today I can stand tall and pain-free!",
+    quote: "I was unable to walk upright for 5 years due to severe scoliosis. ANMOL CARE arranged everything from visa to Dr. Vaishya's schedule. Today I can stand tall and pain-free!",
     thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80",
     tags: ["Bangladesh Patient", "Spine Surgery", "100% Recovery"]
   },
@@ -362,7 +362,7 @@ export const VIDEO_STORIES = [
     duration: "05:40",
     badge: "Cardiac Recovery",
     rating: 5.0,
-    quote: "Finding Dr. Meharwal in Delhi through Anmol Health Care saved my father's life. The hospital staff treat us like family and the costs were itemized without any surprises.",
+    quote: "Finding Dr. Meharwal in Delhi through ANMOL CARE saved my father's life. The hospital staff treat us like family and the costs were itemized without any surprises.",
     thumbnail: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80",
     tags: ["UAE Patient", "Coronary Bypass", "NABH Accredited"]
   },
@@ -377,7 +377,7 @@ export const VIDEO_STORIES = [
     duration: "06:12",
     badge: "Pediatric Oncology",
     rating: 5.0,
-    quote: "Our daughter is now leukemia-free after her bone marrow transplant in Kolkata. Anmol Health Care helped us with long-term guest accommodation right near Apollo Hospital.",
+    quote: "Our daughter is now leukemia-free after her bone marrow transplant in Kolkata. ANMOL CARE helped us with long-term guest accommodation right near Apollo Hospital.",
     thumbnail: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80",
     tags: ["Pediatric Care", "Cancer Free", "Apollo Kolkata"]
   },
@@ -400,23 +400,23 @@ export const VIDEO_STORIES = [
 
 export const FAQS = [
   {
-    question: "How does Anmol Health Care assist international patients?",
-    answer: "Anmol Health Care provides end-to-end medical travel facilitation including free doctor tele-assessments, itemized treatment cost estimates, e-Medical Visa invitation letters, airport pick-up & transfer, hotel/guest house accommodation, multilingual translators, and remote post-treatment follow-up."
+    question: "How does ANMOL CARE assist international patients?",
+    answer: "ANMOL CARE provides end-to-end medical travel facilitation including free doctor tele-assessments, itemized treatment cost estimates, e-Medical Visa invitation letters, airport pick-up & transfer, hotel/guest house accommodation, multilingual translators, and remote post-treatment follow-up."
   },
   {
     question: "Are treatment costs at partner hospitals transparent?",
-    answer: "Yes! Anmol Health Care provides direct hospital price estimates with no hidden fees or extra commissions. You pay the hospital directly for all treatments and surgeries."
+    answer: "Yes! ANMOL CARE provides direct hospital price estimates with no hidden fees or extra commissions. You pay the hospital directly for all treatments and surgeries."
   },
   {
     question: "How fast can I get a Medical Visa invitation letter?",
     answer: "Once you share your medical reports, our hospital team issues an official Medical Visa Invitation Letter within 24 to 48 hours to expedite your visa application at the Indian embassy."
   },
   {
-    question: "Do I need to pay anything upfront for Anmol Health Care's assistance?",
-    answer: "No, Anmol Health Care's initial medical consultation, doctor recommendations, hospital matching, and treatment cost estimates are 100% free of charge for patients."
+    question: "Do I need to pay anything upfront for ANMOL CARE's assistance?",
+    answer: "No, ANMOL CARE's initial medical consultation, doctor recommendations, hospital matching, and treatment cost estimates are 100% free of charge for patients."
   },
   {
-    question: "What languages do Anmol Health Care patient coordinators speak?",
+    question: "What languages do ANMOL CARE patient coordinators speak?",
     answer: "Our patient care coordinators speak English, Hindi, Arabic, Bengali, French, Russian, Swahili, and Uzbek to make sure you have complete peace of mind."
   }
 ];
