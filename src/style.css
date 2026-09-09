@@ -1449,7 +1449,7 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments & Mobile Optimization */
 @media (max-width: 1024px) {
   .nav-links {
     gap: 16px;
@@ -1457,9 +1457,33 @@ body {
   .nav-link {
     font-size: 0.84rem;
   }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video-stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 860px) {
+  body {
+    padding-top: 74px;
+  }
   .nav-links {
     display: none;
   }
@@ -1467,15 +1491,45 @@ body {
     display: block;
   }
   .header-wrapper {
-    padding: 10px 14px;
+    padding: 8px 12px;
+  }
+  .navbar {
+    padding: 6px 14px;
+  }
+  .brand-text {
+    font-size: 1.05rem;
+  }
+  .brand-subtext {
+    font-size: 0.58rem;
+    letter-spacing: 0.4px;
+  }
+  .btn-rua {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+  .hero-section {
+    padding: 24px 16px 36px;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+  .hero-subtitle {
+    font-size: 0.94rem;
   }
   .hero-search-wrapper {
-    margin-top: 10px;
+    margin-top: 14px;
+    width: 100%;
   }
   .rua-banner {
-    padding: 24px;
+    padding: 20px 16px;
     flex-direction: column;
     text-align: center;
+    gap: 16px;
+  }
+  .rua-banner button {
+    width: 100%;
+    justify-content: center;
   }
   .rua-prompts-flex {
     justify-content: center;
@@ -1485,6 +1539,130 @@ body {
   }
   .doctor-avatar-box {
     width: 100%;
-    height: 160px;
+    height: 180px;
+  }
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-banner-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .footer-banner-box button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-container {
+    padding: 32px 16px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .section-subtitle {
+    font-size: 0.88rem;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-pill {
+    font-size: 0.78rem;
+    padding: 5px 12px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero-actions .btn-teal,
+  .hero-actions .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-badges-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.76rem;
+  }
+  .badge-item {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  .destinations-grid,
+  .features-grid,
+  .specs-grid,
+  .video-stories-grid,
+  .timeline-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .specs-tab-bar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    gap: 6px;
+  }
+  .specs-tab-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .tab-pill {
+    flex-shrink: 0;
+    font-size: 0.82rem;
+    padding: 8px 14px;
+  }
+  .hospitals-slider {
+    gap: 12px;
+  }
+  .hospital-card {
+    min-width: 260px;
+    height: 320px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    font-size: 0.78rem;
+  }
+  .modal-card {
+    padding: 20px 14px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    max-height: 88vh;
+    border-radius: 16px;
+  }
+  .toast-container {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+  .toast {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-text {
+    font-size: 0.95rem;
+  }
+  .brand-subtext {
+    display: none;
+  }
+  .btn-lang {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  .hero-title {
+    font-size: 1.55rem;
   }
 }
