@@ -323,27 +323,6 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-/* Header WhatsApp Icon Button (Right side logo-style icon integration) */
-.header-wa-icon-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-  color: #FFFFFF;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
-  text-decoration: none;
-}
-
-.header-wa-icon-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
-}
-
 /* Premium Hero Action Buttons & Modern Typography */
 .btn-hero-call {
   background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
@@ -1439,13 +1418,6 @@ footer {
   .nav-actions .btn-whatsapp,
   .hide-mobile {
     display: none !important;
-  }
-
-  .header-wa-icon-btn {
-    display: inline-flex !important;
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
   }
 
   .nav-actions {
