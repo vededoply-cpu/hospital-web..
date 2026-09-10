@@ -1,429 +1,232 @@
-export const HOSPITALS = [
+export const SERVICES = [
   {
-    id: "apollo-chennai",
-    name: "Apollo Hospitals, Greams Road",
-    city: "Chennai",
-    country: "India",
-    rating: 4.9,
-    reviewsCount: 1420,
-    specialitiesCount: "60+",
-    doctorsCount: "150+",
-    bedsCount: "600+",
-    established: 1983,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "India's Flagship Healthcare Pioneer & Multi-Speciality Excellence",
-    description: "Apollo Hospitals, Greams Road, Chennai is the flagship hospital of the Apollo Group. Recognized as one of the best multi-speciality hospitals in Asia, it specializes in advanced heart transplants, oncology, robotic surgery, and organ transplants.",
-    highlights: [
-      "Performs over 150,000 cardiac surgeries with 99.6% success rate",
-      "Dedicated CyberKnife Radiation Oncology center",
-      "Pioneer in Liver & Kidney Transplants in South Asia",
-      "Full International Patient Lounge & Multilingual Interpreters"
-    ]
+    id: "home-care",
+    title: "Home Care at Home",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    badge: "Most Requested",
+    tagline: "Attendants & caregivers for daily patient support and personal care.",
+    description: "Our trained home care attendants assist patients with daily living activities, hygiene, bathing, mobility, feeding, medication reminders, and bedside assistance.",
+    features: [
+      "12-Hour Day / Night & 24-Hour Resident Attendants",
+      "Personal Hygiene, Bathing & Grooming Assistance",
+      "Mobility Support, Wheelchair Assistance & Position Change",
+      "Timely Feeding & Medication Management"
+    ],
+    shiftOptions: ["12 Hours Day", "12 Hours Night", "24 Hours Live-in"],
+    href: "home-care.html"
   },
   {
-    id: "fortis-escorts-delhi",
-    name: "Fortis Escorts Heart Institute",
-    city: "New Delhi",
-    country: "India",
-    rating: 4.9,
-    reviewsCount: 980,
-    specialitiesCount: "45+",
-    doctorsCount: "120+",
-    bedsCount: "310+",
-    established: 1988,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "World Leader in Cardiac Care & Advanced Heart Surgeries",
-    description: "Fortis Escorts Heart Institute is globally recognized as a center of excellence in cardiac care, pioneering pediatric cardiology, TAVI heart valve replacement, and complex bypass surgeries.",
-    highlights: [
-      "Over 200,000 coronary angiographies completed",
-      "Asia's largest center for pediatric cardiac surgery",
-      "Dedicated 24x7 Chest Pain Center & Emergency Cardiac ICU",
-      "Specialized International Patient Coordination Team"
-    ]
+    id: "elderly-care",
+    title: "Elderly Care at Home",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
+    badge: "Senior Special",
+    tagline: "Compassionate senior care, companionship and daily assistance.",
+    description: "Dedicated care for senior citizens needing assistance with daily chores, companion care, mobility support, doctor visit assistance, and cognitive engagement.",
+    features: [
+      "Compassionate Companion & Emotional Support",
+      "Fall Prevention & Assisted Walking",
+      "Vital Monitoring & Routine Health Check-ups",
+      "Dementia, Alzheimer's & Parkinson's Care"
+    ],
+    shiftOptions: ["12 Hours Shift", "24 Hours Full-Time"],
+    href: "elderly-care.html"
   },
   {
-    id: "medanta-gurugram",
-    name: "Medanta - The Medicity",
-    city: "Gurugram, Delhi NCR",
-    country: "India",
-    rating: 5.0,
-    reviewsCount: 2310,
-    specialitiesCount: "70+",
-    doctorsCount: "250+",
-    bedsCount: "1250+",
-    established: 2009,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "Asia's Premier Multi-Super Speciality Institute Founded by Dr. Naresh Trehan",
-    description: "Spread across 43 acres, Medanta is a world-class super-speciality hospital delivering top-tier treatments in Heart Surgery, Neurosciences, Liver Transplants, and Bone Marrow Transplants.",
-    highlights: [
-      "State-of-the-art Robotic Surgery Suite & Da Vinci Xi System",
-      "World renowned Liver Transplant & Regenerative Medicine Institute",
-      "Dedicated 45-bed Bone Marrow Transplant Unit",
-      "Private VIP Suites & Luxury Accommodation Services"
-    ]
+    id: "nursing-care",
+    title: "Nursing Care at Home",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>`,
+    badge: "Medical Grade",
+    tagline: "GNM, ANM and B.Sc nursing support according to care requirements.",
+    description: "Certified and experienced nurses for post-surgical recovery, ICU care at home, catheterization, tracheostomy, wound dressing, IV injections, and vital monitoring.",
+    features: [
+      "Certified GNM, ANM & B.Sc Registered Nurses",
+      "ICU Setup Care & Ventilator Support at Home",
+      "Surgical Dressing, Injections & IV Drips",
+      "Ryle's Tube Feeding & Catheter Care"
+    ],
+    shiftOptions: ["12 Hours Shift", "24 Hours ICU Care", "Short Visit"],
+    href: "nursing-care.html"
   },
   {
-    id: "apollo-gleneagles-kolkata",
-    name: "Apollo Gleneagles Hospital",
-    city: "Kolkata",
-    country: "India",
-    rating: 4.8,
-    reviewsCount: 840,
-    specialitiesCount: "50+",
-    doctorsCount: "110+",
-    bedsCount: "510+",
-    established: 2003,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "Eastern India's Premier Multi-Speciality Tertiary Care Center",
-    description: "Apollo Gleneagles Kolkata combines international healthcare standards with compassionate clinical expertise. It is renowned for Cancer Care, Neurosurgery, and Orthopedic Joint Replacements.",
-    highlights: [
-      "Novalis Tx Radiosurgery System for precision cancer therapy",
-      "First JCI Accredited Hospital in Eastern India",
-      "Advanced Trauma & Stroke Intervention Center",
-      "Seamless Medical Visa & Travel Desk for Neighboring Nations"
-    ]
+    id: "medical-equipment",
+    title: "Medical Equipment on Rent",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M22 4v16M2 12h20M6 12v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>`,
+    badge: "Fast Delivery",
+    tagline: "Home-use medical equipment with convenient rental support.",
+    description: "High-quality medical equipment delivered and setup right at your doorstep across Delhi NCR, Gurugram, and Noida with 24/7 technical support.",
+    features: [
+      "Oxygen Concentrators & Cylinders",
+      "Manual & Automatic Electric ICU Beds",
+      "BiPAP, CPAP & Ventilator Machines",
+      "Suction Machines, Syringe Pumps & Wheelchairs"
+    ],
+    shiftOptions: ["Monthly Rental", "Weekly Rental", "Purchase"],
+    href: "medical-equipment.html"
   },
   {
-    id: "max-saket-delhi",
-    name: "Max Super Speciality Hospital, Saket",
-    city: "New Delhi",
-    country: "India",
-    rating: 4.9,
-    reviewsCount: 1150,
-    specialitiesCount: "55+",
-    doctorsCount: "140+",
-    bedsCount: "500+",
-    established: 2006,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "Center of Excellence in Oncology, Organ Transplants & Orthopedics",
-    description: "Max Super Speciality Hospital Saket is one of India's top healthcare destinations, equipped with Intraoperative MRI, TrueBeam STx Radiotherapy, and world-class Organ Transplant units.",
-    highlights: [
-      "Over 3,000 successful Liver & Kidney Transplants",
-      "Comprehensive Cancer Center with CAR-T Therapy capabilities",
-      "Intra-Operative 3.0 Tesla MRI for Neurosurgery",
-      "Airport Concierge & Priority Admission Lounge"
-    ]
+    id: "emergency-care",
+    title: "Emergency Home Care",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="15" height="12" rx="2"/><polygon points="16 8 22 10 22 18 16 18"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="15.5" cy="18.5" r="2.5"/></svg>`,
+    badge: "24/7 Rapid Response",
+    tagline: "Quick coordination for urgent home-care requirements.",
+    description: "Immediate emergency staffing and urgent care assistance available round-the-clock for critical situations, sudden discharges, or unexpected caregiver absences.",
+    features: [
+      "Immediate Staff Dispatch within 30-60 Minutes",
+      "24/7 Helpline Support: 9599747919",
+      "Post-Hospital Discharge Assistance",
+      "Emergency Oxygen & ICU Equipment Support"
+    ],
+    shiftOptions: ["Immediate Shift", "24/7 Helpline"],
+    href: "emergency-care.html"
   },
   {
-    id: "manipal-bangalore",
-    name: "Manipal Hospital, Old Airport Road",
-    city: "Bengaluru",
-    country: "India",
-    rating: 4.8,
-    reviewsCount: 920,
-    specialitiesCount: "60+",
-    doctorsCount: "135+",
-    bedsCount: "600+",
-    established: 1991,
-    accreditations: ["NABH", "JCI"],
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-    logo: "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?auto=format&fit=crop&w=120&q=80",
-    tagline: "Leading Healthcare Hub for International Patients in South India",
-    description: "Manipal Hospital Bangalore offers top-tier tertiary medical services across Cardiology, Gastrointestinal Sciences, Robotic Joint Replacement, and Pediatric Care.",
-    highlights: [
-      "IBM Watson for Oncology AI-driven Cancer Care",
-      "Pioneers in Minimally Invasive Cardiac Procedures",
-      "International Patient Lounge with Dedicated Translators",
-      "Direct Airport Shuttle & Teleconsultation Desk"
-    ]
+    id: "physiotherapy",
+    title: "Physiotherapy at Home",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>`,
+    badge: "Expert Doctors",
+    tagline: "Physiotherapist visits at home for convenient rehabilitation support.",
+    description: "Qualified physiotherapists conduct home sessions for stroke recovery, joint replacement rehab, back/neck pain management, paralysis, and post-fracture care.",
+    features: [
+      "Licensed & Experienced Physiotherapists",
+      "Stroke & Paralysis Rehabilitation",
+      "Orthopedic & Joint Replacement Recovery",
+      "Personalized Exercise & Pain Management Plan"
+    ],
+    shiftOptions: ["Per Session Visit", "10-Session Package"],
+    href: "physiotherapy.html"
   }
 ];
 
-export const DOCTORS = [
+export const EQUIPMENT_LIST = [
   {
-    id: "dr-ayan-basu",
-    name: "Dr. Ayan Basu",
-    title: "Senior Consultant - Radiation Oncology",
-    specialty: "Radiation Oncologist",
-    experience: "18+ Years",
-    hospital: "Apollo Gleneagles Hospital",
-    city: "Kolkata",
-    rating: 4.9,
-    reviews: 310,
-    fee: "₹1,200 ($15)",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi", "Bengali"],
-    bio: "Dr. Ayan Basu is an eminent Radiation Oncologist with over 18 years of specialized experience in Proton Therapy, CyberKnife, and Precision Stereotactic Radiosurgery (SRS/SBRT).",
-    availableSlots: ["Today 4:00 PM", "Tomorrow 11:30 AM", "Tomorrow 3:00 PM"],
-    verified: true
+    name: "Oxygen Concentrator (5L / 10L)",
+    category: "Respiratory",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>`,
+    desc: "Medical-grade continuous oxygen flow with humidification bottle.",
+    tag: "Available on Rent"
   },
   {
-    id: "dr-ranga-rao",
-    name: "Dr. (Col.) R Ranga Rao",
-    title: "Chairman - Cancer Centre",
-    specialty: "Medical Oncologist",
-    experience: "30+ Years",
-    hospital: "Paras Health & Medanta",
-    city: "Gurugram, Delhi NCR",
-    rating: 5.0,
-    reviews: 450,
-    fee: "₹1,800 ($22)",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi", "Telugu"],
-    bio: "Decorated Army Veteran and leading Medical Oncologist, Dr. R Ranga Rao has spearheaded chemotherapy, targeted immunotherapy, and precision cancer management for 3 decades.",
-    availableSlots: ["Tomorrow 10:00 AM", "Tomorrow 2:00 PM", "Day after 12:00 PM"],
-    verified: true
+    name: "Hospital ICU Bed (5 Function / 3 Function)",
+    category: "Patient Bed",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M22 4v16M2 12h20M6 12v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>`,
+    desc: "Motorized electric bed with side rails, backrest, and knee elevation.",
+    tag: "Free Delivery & Setup"
   },
   {
-    id: "dr-zs-meharwal",
-    name: "Dr. Z S Meharwal",
-    title: "Executive Director - Cardiac Surgery",
-    specialty: "Cardiac Surgeon",
-    experience: "32+ Years",
-    hospital: "Fortis Escorts Heart Institute",
-    city: "New Delhi",
-    rating: 5.0,
-    reviews: 580,
-    fee: "₹2,000 ($25)",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi", "Urdu"],
-    bio: "World-renowned Cardiovascular Surgeon who has performed over 25,000 heart surgeries, including complex CABG coronary bypass, heart valve repairs, and heart transplants.",
-    availableSlots: ["Today 5:30 PM", "Tomorrow 1:00 PM", "Tomorrow 4:30 PM"],
-    verified: true
+    name: "BiPAP / CPAP Machine",
+    category: "Respiratory",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12c.5 2.5 2 4 4 4s3.5-1.5 4-4"/></svg>`,
+    desc: "Advanced sleep & breathing therapy device with mask fittings.",
+    tag: "Sanitized & Calibrated"
   },
   {
-    id: "dr-abhiruchi-chatterjee",
-    name: "Dr. Abhiruchi Chatterjee",
-    title: "Senior Consultant - IVF & Fertility",
-    specialty: "IVF & Reproductive Specialist",
-    experience: "15+ Years",
-    hospital: "Apollo Hospitals, Greams Road",
-    city: "Chennai",
-    rating: 4.9,
-    reviews: 290,
-    fee: "₹1,500 ($18)",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi", "Tamil", "Bengali"],
-    bio: "Renowned Gynecologist & Fertility Specialist with exceptional success rates in IVF, ICSI, Egg Freezing, and Laparoscopic Reproductive Surgery for international couples.",
-    availableSlots: ["Tomorrow 11:00 AM", "Tomorrow 3:30 PM", "Day after 10:30 AM"],
-    verified: true
+    name: "Wheelchairs & Air Mattresses",
+    category: "Mobility",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="4" r="2"/><path d="M10 8h3l2 5h-4l-1.5 5M6 15a5 5 0 1 0 10 0"/></svg>`,
+    desc: "Anti-bed sore bubble mattresses and heavy-duty foldable wheelchairs.",
+    tag: "Same-Day Delivery"
   },
   {
-    id: "dr-naresh-trehan",
-    name: "Dr. Naresh Trehan",
-    title: "Chairman & Managing Director",
-    specialty: "Cardiothoracic Surgeon",
-    experience: "42+ Years",
-    hospital: "Medanta - The Medicity",
-    city: "Gurugram, Delhi NCR",
-    rating: 5.0,
-    reviews: 1200,
-    fee: "₹3,000 ($38)",
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi"],
-    bio: "Padma Bhushan awardee and legendary Cardiovascular Surgeon who has performed over 48,000 open heart surgeries worldwide. Founder of Medanta The Medicity.",
-    availableSlots: ["Tomorrow 2:30 PM", "Day after 11:00 AM"],
-    verified: true
+    name: "Suction Machine & Syringe Pump",
+    category: "ICU Support",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-1.6-1.6c-1-1-1-2.5 0-3.4L14 4M9 11l4 4M5 19l-3 3"/></svg>`,
+    desc: "Portable high-vacuum suction machine and precision infusion pumps.",
+    tag: "Medical Standard"
   },
   {
-    id: "dr-sandeep-vaishya",
-    name: "Dr. Sandeep Vaishya",
-    title: "Executive Director - Neurosurgery",
-    specialty: "Brain & Spine Neurosurgeon",
-    experience: "26+ Years",
-    hospital: "Fortis Memorial Research Institute",
-    city: "Gurugram",
-    rating: 4.8,
-    reviews: 390,
-    fee: "₹2,000 ($25)",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80",
-    languages: ["English", "Hindi"],
-    bio: "Internationally renowned Neurosurgeon specializing in Gamma Knife Radiosurgery, Skull Base Tumors, Brachial Plexus Surgery, and Minimally Invasive Spine Surgery.",
-    availableSlots: ["Today 3:00 PM", "Tomorrow 10:30 AM"],
-    verified: true
+    name: "Patient Cardiac Monitor",
+    category: "Vital Monitoring",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
+    desc: "Multi-para monitor tracking ECG, SpO2, NIBP, pulse, and respiration rate.",
+    tag: "24/7 Support"
   }
 ];
 
-export const DESTINATIONS = [
+export const WHY_US = [
   {
-    id: "india",
-    name: "India",
-    tagline: "Global Leader in Super-Speciality Healthcare",
-    subtitle: "Save up to 70-80% on treatment costs with world-class JCI & NABH accredited hospital networks.",
-    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
-    hospitalsCount: "150+ Top Hospitals",
-    specialistsCount: "5,000+ Verified Doctors",
-    topSpecialities: ["Cardiology", "Oncology", "Organ Transplant", "Orthopedics", "IVF & Fertility"],
-    visaType: "e-Medical Visa (48 Hour Approval)",
-    avgSavings: "75%"
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+    title: "Qualified & Background Checked Staff",
+    description: "Every caregiver, nurse, and attendant undergoes strict police verification, background reference checks, and practical healthcare training."
   },
   {
-    id: "nepal",
-    name: "Nepal",
-    tagline: "Trusted Regional Care & Wellness Destination",
-    subtitle: "High quality affordable surgical care, eye surgery, and cardiac procedures in serene healing environments.",
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
-    hospitalsCount: "25+ Accredited Hospitals",
-    specialistsCount: "800+ Specialists",
-    topSpecialities: ["Eye & Cataract Surgery", "General Surgery", "Cardiology", "Dental & Rehabilitation"],
-    visaType: "Visa on Arrival Available",
-    avgSavings: "65%"
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    title: "Convenient Home Visits",
+    description: "Avoid hospital stress and long queues. Get professional nursing, attendant care, and physiotherapy right in the safety and comfort of home."
   },
   {
-    id: "thailand",
-    name: "Thailand",
-    tagline: "Premier Destination for Medical Luxury & Plastic Surgery",
-    subtitle: "Renowned for state-of-the-art cosmetic surgery, wellness checkups, cardiac care, and luxury recovery resorts.",
-    image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80",
-    hospitalsCount: "40+ JCI Hospitals",
-    specialistsCount: "2,000+ Specialists",
-    topSpecialities: ["Cosmetic Surgery", "Executive Wellness", "Orthopedics", "Dental Implants"],
-    visaType: "Medical Tourist Visa",
-    avgSavings: "55%"
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+    title: "Fast & 24/7 Contact Response",
+    description: "Call or WhatsApp our response team anytime. We arrange qualified care staff and equipment within 1-2 hours across Delhi NCR."
+  },
+  {
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
+    title: "Personalized Care & Flexibility",
+    description: "Whether you need a 12-hour day shift, 12-hour night shift, or 24-hour full-time resident attendant, we customize plans to your needs."
   }
 ];
 
-export const SPECIALITIES = [
+export const TESTIMONIALS = [
   {
-    id: "cardiology",
-    title: "Cardiology & Cardiac Surgery",
-    category: "Surgical",
-    icon: "heart-pulse",
-    description: "Advanced cardiac procedures, bypass surgery, TAVI valve replacements, and pediatric heart repairs.",
-    procedures: ["CABG Coronary Bypass", "Heart Valve Replacement", "Angioplasty & Stenting", "Pacemaker Implantation", "Pediatric Heart Surgery"]
+    name: "Rajesh Malhotra",
+    location: "DLF Phase 5, Gurugram",
+    service: "Elderly & Attendants",
+    rating: 5,
+    text: "Anmol Care provided an outstanding attendant for my 82-year-old father after his hip surgery. The caregiver was extremely polite, attentive, and punctual. Highly recommended!"
   },
   {
-    id: "oncology",
-    title: "Oncology & Cancer Care",
-    category: "Medical",
-    icon: "activity",
-    description: "Comprehensive precision cancer therapy, CyberKnife radiation, Immunotherapy, and Bone Marrow Transplants.",
-    procedures: ["Targeted Chemotherapy", "Proton & CyberKnife Therapy", "Bone Marrow Transplant", "Robotic Surgical Oncology", "CAR-T Cell Therapy"]
+    name: "Priya Sharma",
+    location: "Sector 62, Noida",
+    service: "Nursing Care at Home",
+    rating: 5,
+    text: "We needed a GNM nurse for post-stroke tracheostomy care. The nurse sent by Anmol Care was super experienced and handled everything with great skill. Relief for our family!"
   },
   {
-    id: "orthopedics",
-    title: "Orthopedics & Joint Replacement",
-    category: "Surgical",
-    icon: "bone",
-    description: "Robotic total knee & hip joint replacements, spine realignment, and sports injury procedures.",
-    procedures: ["Robotic Knee Replacement", "Hip Joint Replacement", "Minimally Invasive Spine Surgery", "Arthroscopy & ACL Repair", "Deformity Correction"]
-  },
-  {
-    id: "neurosurgery",
-    title: "Neurology & Neurosurgery",
-    category: "Surgical",
-    icon: "brain",
-    description: "Brain tumor excisions, stroke rehabilitation, Gamma Knife radiosurgery, and epilepsy treatments.",
-    procedures: ["Brain Tumor Surgery", "Deep Brain Stimulation (DBS)", "Spine Fusion & Disc Surgery", "Stroke Rehabilitation", "Gamma Knife Radiosurgery"]
-  },
-  {
-    id: "transplant",
-    title: "Organ Transplants (Liver & Kidney)",
-    category: "Surgical",
-    icon: "shield-check",
-    description: "World-leading living donor & cadaveric Liver, Kidney, and Heart transplantation programs.",
-    procedures: ["Living Donor Liver Transplant", "Renal Kidney Transplant", "Pediatric Organ Transplant", "Post-Transplant Intensive Care"]
-  },
-  {
-    id: "ivf",
-    title: "IVF & Fertility Treatments",
-    category: "Lifestyle",
-    icon: "sparkles",
-    description: "High success rate fertility care including ICSI, Egg Freezing, IUI, and Pre-implantation Genetic Testing.",
-    procedures: ["IVF & ICSI Cycles", "Egg & Sperm Freezing", "Laser-Assisted Hatching", "PGT Genetic Testing", "Laparoscopic Fertility Surgery"]
-  }
-];
-
-// YOUTUBE-STYLED VIDEO BORDERBOX CARDS DATA (No YouTube links, kept clean borderbox layout)
-export const VIDEO_STORIES = [
-  {
-    id: "story-1",
-    title: "HOW ANMOL CARE HELPED SCOLIOSIS PATIENT'S LIFE..!",
-    patientName: "Rubel Sheikh",
-    patientCountry: "Bangladesh",
-    procedure: "Complex Scoliosis Spine Surgery",
-    hospital: "Fortis Memorial Research Institute",
-    doctor: "Dr. Sandeep Vaishya",
-    duration: "04:15",
-    badge: "Spine Surgery Success",
-    rating: 5.0,
-    quote: "I was unable to walk upright for 5 years due to severe scoliosis. ANMOL CARE arranged everything from visa to Dr. Vaishya's schedule. Today I can stand tall and pain-free!",
-    thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80",
-    tags: ["Bangladesh Patient", "Spine Surgery", "100% Recovery"]
-  },
-  {
-    id: "story-2",
-    title: "Heart Bypass Surgery Success Story - Patient Journey from UAE",
-    patientName: "Sajib Hossain",
-    patientCountry: "UAE",
-    procedure: "CABG Heart Bypass Surgery",
-    hospital: "Fortis Escorts Heart Institute",
-    doctor: "Dr. Z S Meharwal",
-    duration: "05:40",
-    badge: "Cardiac Recovery",
-    rating: 5.0,
-    quote: "Finding Dr. Meharwal in Delhi through ANMOL CARE saved my father's life. The hospital staff treat us like family and the costs were itemized without any surprises.",
-    thumbnail: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80",
-    tags: ["UAE Patient", "Coronary Bypass", "NABH Accredited"]
-  },
-  {
-    id: "story-3",
-    title: "Successful Bone Marrow Transplant for 8-Year-Old Farhin",
-    patientName: "Farhin Sultana",
-    patientCountry: "Bangladesh",
-    procedure: "Pediatric Bone Marrow Transplant",
-    hospital: "Apollo Gleneagles Hospital",
-    doctor: "Dr. Ayan Basu",
-    duration: "06:12",
-    badge: "Pediatric Oncology",
-    rating: 5.0,
-    quote: "Our daughter is now leukemia-free after her bone marrow transplant in Kolkata. ANMOL CARE helped us with long-term guest accommodation right near Apollo Hospital.",
-    thumbnail: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80",
-    tags: ["Pediatric Care", "Cancer Free", "Apollo Kolkata"]
-  },
-  {
-    id: "story-4",
-    title: "Robotic Bilateral Knee Replacement - Full Recovery in 14 Days",
-    patientName: "Michael K.",
-    patientCountry: "Kenya",
-    procedure: "Robotic Total Knee Replacement",
-    hospital: "Medanta - The Medicity",
-    doctor: "Dr. Ashok Rajgopal",
-    duration: "03:50",
-    badge: "Robotic Orthopedics",
-    rating: 5.0,
-    quote: "I flew from Nairobi with severe arthritis in both knees. After robotic surgery at Medanta, I walked without crutches on day 7. Absolutely remarkable care!",
-    thumbnail: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80",
-    tags: ["Kenya Patient", "Robotic Surgery", "Pain-Free Walk"]
+    name: "Amit Varma",
+    location: "Vasant Kunj, Delhi",
+    service: "Oxygen Equipment & Physio",
+    rating: 5,
+    text: "Rented an oxygen concentrator and booked home physiotherapy. Same day delivery and therapist arrived on time. Very professional helpline support at 9599747919."
   }
 ];
 
 export const FAQS = [
   {
-    question: "How does ANMOL CARE assist international patients?",
-    answer: "ANMOL CARE provides end-to-end medical travel facilitation including free doctor tele-assessments, itemized treatment cost estimates, e-Medical Visa invitation letters, airport pick-up & transfer, hotel/guest house accommodation, multilingual translators, and remote post-treatment follow-up."
+    question: "What types of home care staff do you provide?",
+    answer: "We provide Patient Attendants (GDAs), Elderly Caregivers, Certified GNM/ANM & B.Sc Registered Nurses, Home Physiotherapists, and ICU Care Technicians."
   },
   {
-    question: "Are treatment costs at partner hospitals transparent?",
-    answer: "Yes! ANMOL CARE provides direct hospital price estimates with no hidden fees or extra commissions. You pay the hospital directly for all treatments and surgeries."
+    question: "How quickly can a caregiver or nurse reach my home?",
+    answer: "For emergency requests across Delhi NCR, Gurugram, and Noida, we can dispatch staff within 1 to 2 hours of booking confirmation."
   },
   {
-    question: "How fast can I get a Medical Visa invitation letter?",
-    answer: "Once you share your medical reports, our hospital team issues an official Medical Visa Invitation Letter within 24 to 48 hours to expedite your visa application at the Indian embassy."
+    question: "Are your caregivers and nurses background verified?",
+    answer: "Yes, 100% of our care staff undergo police verification, identity validation, document verification, and prior experience reference checks."
   },
   {
-    question: "Do I need to pay anything upfront for ANMOL CARE's assistance?",
-    answer: "No, ANMOL CARE's initial medical consultation, doctor recommendations, hospital matching, and treatment cost estimates are 100% free of charge for patients."
+    question: "Can I choose between 12-hour and 24-hour shifts?",
+    answer: "Yes! We offer flexible shift options including 12-Hour Day Shift, 12-Hour Night Shift, and 24-Hour Resident (Live-in) care support."
   },
   {
-    question: "What languages do ANMOL CARE patient coordinators speak?",
-    answer: "Our patient care coordinators speak English, Hindi, Arabic, Bengali, French, Russian, Swahili, and Uzbek to make sure you have complete peace of mind."
+    question: "What medical equipment can I rent from Anmol Care?",
+    answer: "We rent Oxygen Concentrators (5L & 10L), Motorized ICU Hospital Beds, BiPAP/CPAP Machines, Suction Units, Cardiac Monitors, Wheelchairs, and Anti-Bedsore Air Mattresses."
+  },
+  {
+    question: "Which areas do you serve?",
+    answer: "We cover all major locations across Delhi NCR, including South/West/North/East Delhi, Gurugram, Noida, Greater Noida, Ghaziabad, and Faridabad."
   }
 ];
 
-export const RUA_PROMPTS = [
-  "Can you help me find the best Cardiac Surgeon in India?",
-  "What is the estimated cost of Liver Transplant at Medanta?",
-  "How do I apply for an e-Medical Visa for treatment?",
-  "Which hospital in Kolkata is best for Cancer treatment?"
+export const SERVICE_AREAS = [
+  "Delhi NCR",
+  "Gurugram",
+  "Noida",
+  "Greater Noida",
+  "Ghaziabad",
+  "Faridabad",
+  "Dwarka",
+  "Vasant Kunj",
+  "South Extension",
+  "DLF Cyber City",
+  "Golf Course Road",
+  "Noida Sector 18/62"
 ];
