@@ -1262,19 +1262,34 @@ footer {
   background: #E2E8F0;
 }
 
-/* Responsive Styles */
+/* ==========================================================================
+   Comprehensive Mobile & Touch Responsiveness Styles System
+   ========================================================================== */
+
 @media (max-width: 992px) {
-  .hero-grid, .contact-grid {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .hero-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .equipment-cta-banner {
     flex-direction: column;
     text-align: center;
+    padding: 32px 24px;
   }
 
-  .hero h1 {
-    font-size: 36px;
+  .banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .banner-actions .btn {
+    width: 100%;
   }
 
   .top-bar-inner {
@@ -1288,14 +1303,16 @@ footer {
     top: 76px;
     left: 0;
     right: 0;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     flex-direction: column;
     padding: 24px;
-    gap: 16px;
+    gap: 12px;
     border-bottom: 1px solid var(--border);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
     transform: translateY(-150%);
-    transition: transform 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
   }
 
@@ -1303,30 +1320,261 @@ footer {
     transform: translateY(0);
   }
 
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-link:hover, .nav-link.active {
+    background: var(--bg-alt);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
   .hamburger-btn {
     display: flex;
   }
 
   .hide-mobile {
-    display: none;
+    display: none !important;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .equipment-grid,
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 74px; /* Clearance for sticky bottom bar */
+  }
+
+  .section, .band {
+    padding: 48px 0;
+  }
+
+  .heading {
+    margin-bottom: 32px;
+  }
+
+  .heading h2 {
+    font-size: 26px;
+  }
+
+  .heading p {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 36px 0 48px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hero .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero .btn-lg, .btn-lg {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .trust {
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  .hero-card {
+    padding: 24px 18px;
+  }
+
+  .hero-card-header h3 {
+    font-size: 19px;
+  }
+
+  .form-group input, 
+  .form-group select, 
+  .form-group textarea {
+    padding: 14px 16px;
+    font-size: 16px; /* Prevents auto-zoom on mobile safari */
+    border-radius: var(--radius-md);
+  }
+
   .form-row {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .cards {
     grid-template-columns: 1fr;
-  }
-  
-  .hero .actions {
-    flex-direction: column;
+    gap: 16px;
   }
 
-  .hero .btn-lg {
-    width: 100%;
+  .card {
+    padding: 24px 20px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .equipment-grid,
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .equipment-card {
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .eq-info h4 {
+    font-size: 16px;
+  }
+
+  .feature-box {
+    padding: 24px 18px;
+  }
+
+  .testimonial-card {
+    padding: 20px 18px;
+  }
+
+  .contact-info h2 {
+    font-size: 26px;
+  }
+
+  .contact-box {
+    padding: 24px 18px;
+  }
+
+  .contact-box h3 {
+    font-size: 20px;
+  }
+
+  .modal-card {
+    padding: 24px 18px;
+    width: 92%;
+    max-height: 85vh;
   }
 }
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0 14px;
+  }
+
+  .nav {
+    height: 64px;
+  }
+
+  .nav-menu {
+    top: 64px;
+  }
+
+  .logo-icon-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .logo-main {
+    font-size: 18px;
+  }
+
+  .logo-sub {
+    font-size: 9.5px;
+  }
+
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .top-bar {
+    font-size: 11.5px;
+    padding: 6px 0;
+  }
+
+  .top-info {
+    font-size: 11.5px;
+  }
+
+  .top-contact {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+    font-size: 11.5px;
+  }
+
+  .top-wa-btn {
+    padding: 2px 8px;
+    font-size: 11px;
+  }
+
+  .sticky {
+    bottom: 0;
+    box-shadow: 0 -4px 15px rgba(15, 23, 42, 0.12);
+  }
+
+  .sticky a {
+    padding: 12px;
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .sticky svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .c-num-card {
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  .c-num-card .c-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .c-num-card a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-sub {
+    display: none;
+  }
+}
+
 
