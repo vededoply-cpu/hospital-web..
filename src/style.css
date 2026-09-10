@@ -323,6 +323,104 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
+/* Header WhatsApp Icon Button (Right side logo-style icon integration) */
+.header-wa-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.header-wa-icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+}
+
+/* Premium Hero Action Buttons & Modern Typography */
+.btn-hero-call {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px -4px rgba(2, 132, 199, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.btn-hero-call:hover {
+  background: linear-gradient(135deg, #0369A1 0%, #075985 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -4px rgba(2, 132, 199, 0.5);
+}
+
+.btn-hero-wa {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px -4px rgba(37, 211, 102, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.btn-hero-wa:hover {
+  background: linear-gradient(135deg, #1EBE5A 0%, #0E7A6C 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -4px rgba(37, 211, 102, 0.45);
+}
+
+.btn-hero-book {
+  background: #FFFFFF;
+  color: #0284C7;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  border: 1.5px solid #BAE6FD;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.btn-hero-book:hover {
+  background: #F0F9FF;
+  border-color: #0284C7;
+  color: #0369A1;
+  transform: translateY(-2px);
+}
+
 .pulse-glow {
   animation: pulse-shadow 2s infinite;
 }
@@ -1298,7 +1396,7 @@ footer {
     font-size: 9.5px;
   }
 
-  /* Hide call button from top navbar on mobile to prevent overcrowding */
+  /* Hide text buttons from top navbar on mobile to prevent overcrowding */
   .nav-actions .call,
   .nav-actions .btn-primary,
   .nav-actions .btn-whatsapp,
@@ -1306,9 +1404,22 @@ footer {
     display: none !important;
   }
 
+  .header-wa-icon-btn {
+    display: inline-flex !important;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
   .hamburger-btn {
     display: flex !important;
-    padding: 8px;
+    padding: 6px;
   }
 
   .nav-menu {
