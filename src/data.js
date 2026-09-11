@@ -1,96 +1,96 @@
 export const SERVICES = [
   {
     id: "home-care",
-    title: "Home Care at Home",
+    title: "Home Care Services at Home",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
     badge: "Most Requested",
-    tagline: "Attendants & caregivers for daily patient support and personal care.",
-    description: "Our trained home care attendants assist patients with daily living activities, hygiene, bathing, mobility, feeding, medication reminders, and bedside assistance.",
+    tagline: "Trusted, compassionate care at your doorstep.",
+    description: "Anmol Care provides trained and reliable caregivers, attendants and nursing support to help your loved ones stay safe, comfortable and cared for at home.",
     features: [
-      "12-Hour Day / Night & 24-Hour Resident Attendants",
-      "Personal Hygiene, Bathing & Grooming Assistance",
-      "Mobility Support, Wheelchair Assistance & Position Change",
-      "Timely Feeding & Medication Management"
+      "Trusted, compassionate care at your doorstep",
+      "Trained and reliable caregivers",
+      "Attendants and nursing support",
+      "Help your loved ones stay safe, comfortable and cared for at home"
     ],
     shiftOptions: ["12 Hours Day", "12 Hours Night", "24 Hours Live-in"],
     href: "home-care.html"
   },
   {
     id: "elderly-care",
-    title: "Elderly Care at Home",
+    title: "Elderly Care Services at Home",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
     badge: "Senior Special",
-    tagline: "Compassionate senior care, companionship and daily assistance.",
-    description: "Dedicated care for senior citizens needing assistance with daily chores, companion care, mobility support, doctor visit assistance, and cognitive engagement.",
+    tagline: "Trusted, compassionate and professional care for seniors—right at home.",
+    description: "Our trained caregivers provide personal care, daily assistance, companionship and nursing support with safety, dignity and comfort. Contact Anmol Care today.",
     features: [
-      "Compassionate Companion & Emotional Support",
-      "Fall Prevention & Assisted Walking",
-      "Vital Monitoring & Routine Health Check-ups",
-      "Dementia, Alzheimer's & Parkinson's Care"
+      "Trusted, compassionate and professional care for seniors—right at home.",
+      "Our trained caregivers provide personal care, daily assistance,",
+      "companionship and nursing support with safety, dignity and comfort.",
+      "Contact Anmol Care today."
     ],
     shiftOptions: ["12 Hours Shift", "24 Hours Full-Time"],
     href: "elderly-care.html"
   },
   {
     id: "nursing-care",
-    title: "Nursing Care at Home",
+    title: "Nursing Care Services at Home",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>`,
     badge: "Medical Grade",
-    tagline: "GNM, ANM and B.Sc nursing support according to care requirements.",
-    description: "Certified and experienced nurses for post-surgical recovery, ICU care at home, catheterization, tracheostomy, wound dressing, IV injections, and vital monitoring.",
+    tagline: "Professional and trusted nursing care at home by trained nursing staff,",
+    description: "with safe, compassionate and personalized support for your loved ones. For reliable nursing care at home, contact Anmol Care today.",
     features: [
-      "Certified GNM, ANM & B.Sc Registered Nurses",
-      "ICU Setup Care & Ventilator Support at Home",
-      "Surgical Dressing, Injections & IV Drips",
-      "Ryle's Tube Feeding & Catheter Care"
+      "Professional and trusted nursing care at home by trained nursing staff,",
+      "with safe, compassionate and personalized support for your loved ones.",
+      "For reliable nursing care at home,",
+      "contact Anmol Care today."
     ],
     shiftOptions: ["12 Hours Shift", "24 Hours ICU Care", "Short Visit"],
     href: "nursing-care.html"
   },
   {
     id: "medical-equipment",
-    title: "Medical Equipment on Rent",
+    title: "Medical Equipment Services on Rent",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M22 4v16M2 12h20M6 12v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>`,
     badge: "Fast Delivery",
-    tagline: "Home-use medical equipment with convenient rental support.",
-    description: "High-quality medical equipment delivered and setup right at your doorstep across Delhi NCR, Gurugram, and Noida with 24/7 technical support.",
+    tagline: "Quality medical equipment delivered to your doorstep for safe and comfortable home care.",
+    description: "Easy rental, reliable support and convenient service from Anmol Care. Need medical equipment at home? Contact us today.",
     features: [
-      "Oxygen Concentrators & Cylinders",
-      "Manual & Automatic Electric ICU Beds",
-      "BiPAP, CPAP & Ventilator Machines",
-      "Suction Machines, Syringe Pumps & Wheelchairs"
+      "Quality medical equipment delivered to your doorstep",
+      "for safe and comfortable home care.",
+      "Easy rental, reliable support and convenient service from Anmol Care.",
+      "Need medical equipment at home? Contact us today."
     ],
     shiftOptions: ["Monthly Rental", "Weekly Rental", "Purchase"],
     href: "medical-equipment.html"
   },
   {
     id: "emergency-care",
-    title: "Emergency Home Care",
+    title: "Emergency Care Services at Home",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="15" height="12" rx="2"/><polygon points="16 8 22 10 22 18 16 18"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="15.5" cy="18.5" r="2.5"/></svg>`,
     badge: "24/7 Rapid Response",
-    tagline: "Quick coordination for urgent home-care requirements.",
-    description: "Immediate emergency staffing and urgent care assistance available round-the-clock for critical situations, sudden discharges, or unexpected caregiver absences.",
+    tagline: "Quick and reliable home support for urgent care needs,",
+    description: "including first aid, vital monitoring, wound care, medication support and nursing assistance by trained professionals.",
     features: [
-      "Immediate Staff Dispatch within 30-60 Minutes",
-      "24/7 Helpline Support: 9599747919",
-      "Post-Hospital Discharge Assistance",
-      "Emergency Oxygen & ICU Equipment Support"
+      "Quick and reliable home support for urgent care needs,",
+      "including first aid, vital monitoring, wound care,",
+      "medication support and nursing assistance",
+      "by trained professionals."
     ],
     shiftOptions: ["Immediate Shift", "24/7 Helpline"],
     href: "emergency-care.html"
   },
   {
     id: "physiotherapy",
-    title: "Physiotherapy at Home",
+    title: "Physiotherapy Services at Home",
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>`,
     badge: "Expert Doctors",
-    tagline: "Physiotherapist visits at home for convenient rehabilitation support.",
-    description: "Qualified physiotherapists conduct home sessions for stroke recovery, joint replacement rehab, back/neck pain management, paralysis, and post-fracture care.",
+    tagline: "Professional physiotherapy at your doorstep for pain relief, mobility,",
+    description: "strength and recovery—with personalized care by qualified physiotherapy professionals.",
     features: [
-      "Licensed & Experienced Physiotherapists",
-      "Stroke & Paralysis Rehabilitation",
-      "Orthopedic & Joint Replacement Recovery",
-      "Personalized Exercise & Pain Management Plan"
+      "Professional physiotherapy at your doorstep",
+      "for pain relief, mobility, strength and recovery—",
+      "with personalized care",
+      "by qualified physiotherapy professionals."
     ],
     shiftOptions: ["Per Session Visit", "10-Session Package"],
     href: "physiotherapy.html"
@@ -229,4 +229,47 @@ export const SERVICE_AREAS = [
   "DLF Cyber City",
   "Golf Course Road",
   "Noida Sector 18/62"
+];
+
+export const CITY_LOCATIONS = [
+  {
+    id: "noida",
+    name: "Noida & Greater Noida",
+    dispatchTime: "30–60 Min Fast Dispatch",
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    areas: ["Sector 18", "Sector 62", "Sector 137", "Noida Extension", "Jaypee Wish Town", "Gr. Noida West"],
+    phone: "9599747919"
+  },
+  {
+    id: "delhi",
+    name: "Delhi NCR",
+    dispatchTime: "30–60 Min Fast Dispatch",
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    areas: ["South Delhi", "West Delhi", "North Delhi", "East Delhi", "Dwarka", "Vasant Kunj", "Saket"],
+    phone: "9599747919"
+  },
+  {
+    id: "gurugram",
+    name: "Gurugram (Gurgaon)",
+    dispatchTime: "30–60 Min Fast Dispatch",
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    areas: ["DLF Phase 1-5", "Golf Course Road", "Cyber City", "Sohna Road", "MG Road", "Sector 56"],
+    phone: "9599747919"
+  },
+  {
+    id: "faridabad",
+    name: "Faridabad",
+    dispatchTime: "45–60 Min Fast Dispatch",
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    areas: ["Sector 15", "Sector 16", "NIT Faridabad", "Greater Faridabad", "Surajkund", "Sector 21"],
+    phone: "9599747919"
+  },
+  {
+    id: "ghaziabad",
+    name: "Ghaziabad",
+    dispatchTime: "45–60 Min Fast Dispatch",
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    areas: ["Indirapuram", "Vaishali", "Vasundhara", "Raj Nagar Extension", "Crossings Republik", "Kaushambi"],
+    phone: "9599747919"
+  }
 ];

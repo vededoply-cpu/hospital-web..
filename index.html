@@ -22,7 +22,7 @@
     <div class="wrap top-bar-inner">
       <div class="top-info">
         <span class="pulse-dot"></span>
-        <span><b>24/7 Home Care Support</b> • Delhi NCR, Gurugram, Noida & Ghaziabad</span>
+        <span><b>24/7 Home Care Support</b> • Noida, Delhi NCR, Gurugram, Ghaziabad & Faridabad</span>
       </div>
       <div class="top-contact">
         <a href="tel:9599747919" class="top-link">
@@ -188,15 +188,25 @@
                 <input type="tel" id="quickPhone" placeholder="Enter 10-digit mobile number" required />
               </div>
               <div class="form-group">
+                <label for="quickCity">Select City / Region</label>
+                <select id="quickCity" required>
+                  <option value="Delhi NCR" selected>Delhi NCR</option>
+                  <option value="Noida & Gr. Noida">Noida & Greater Noida</option>
+                  <option value="Gurugram">Gurugram (Gurgaon)</option>
+                  <option value="Ghaziabad">Ghaziabad</option>
+                  <option value="Faridabad">Faridabad</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <label for="quickService">Required Service</label>
                 <select id="quickService" required>
                   <option value="" disabled selected>Select Care Service...</option>
                   <option value="Home Care Service at Home">Home Care Service at Home (Attendants)</option>
-                  <option value="Elderly Care at Home">Elderly Care at Home</option>
-                  <option value="Nursing Care at Home">Nursing Care at Home (GNM/ANM)</option>
-                  <option value="Medical Equipment on Rent">Medical Equipment on Rent</option>
-                  <option value="Emergency Home Care">Emergency Home Care</option>
-                  <option value="Physiotherapy at Home">Physiotherapy at Home</option>
+                  <option value="Elderly Care Services at Home">Elderly Care Services at Home</option>
+                  <option value="Nursing Care Services at Home">Nursing Care Services at Home</option>
+                  <option value="Medical Equipment Services on Rent">Medical Equipment Services on Rent</option>
+                  <option value="Emergency Care Services at Home">Emergency Care Services at Home</option>
+                  <option value="Physiotherapy Services at Home">Physiotherapy Services at Home</option>
                 </select>
               </div>
 
@@ -219,15 +229,24 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section wrap">
-      <div class="heading text-center">
-        <div class="eyebrow">OUR SERVICES</div>
-        <h2>Care services designed around your family</h2>
-        <p>Professional support at home, with easy booking by phone or WhatsApp.</p>
-      </div>
+    <section id="services" class="section services-section-bg">
+      <div class="wrap">
+        <div class="heading text-center">
+          <div class="eyebrow">COMPREHENSIVE HOME HEALTHCARE</div>
+          <h2>Care services designed around your family</h2>
+          <p class="section-lead">Trained attendants, certified nurses, senior care specialists & medical equipment delivered with rapid response across NCR.</p>
+          <div class="services-trust-bar">
+            <span>✓ Verified Caregivers</span>
+            <span class="dot">•</span>
+            <span>Fast 30-60 Min Dispatch</span>
+            <span class="dot">•</span>
+            <span>24/7 Helpline Support</span>
+          </div>
+        </div>
 
-      <div class="cards" id="servicesGrid">
-        <!-- Rendered dynamically by JavaScript from data.js -->
+        <div class="cards" id="servicesGrid">
+          <!-- Rendered dynamically by JavaScript from data.js -->
+        </div>
       </div>
     </section>
 
@@ -246,7 +265,7 @@
 
         <div class="equipment-cta-banner">
           <div>
-            <h3>Need urgent equipment delivery?</h3>
+            <h3>Need urgent equipment at home?</h3>
             <p>Oxygen Concentrators, Motorized ICU Beds & BiPAP available for immediate dispatch.</p>
           </div>
           <div class="banner-actions">
@@ -255,6 +274,18 @@
               target="_blank" class="btn whatsapp">WhatsApp Enquiry</a>
           </div>
         </div>
+    </section>
+
+    <!-- City-Wise Service Coverage Section -->
+    <section id="cities" class="section wrap">
+      <div class="heading text-center">
+        <div class="eyebrow">CITIES & COVERAGE</div>
+        <h2>Providing Home Care Across Major NCR Cities</h2>
+        <p>Rapid 30-60 minute staff dispatch & doorstep equipment delivery across Noida, Delhi NCR, Gurugram, Ghaziabad & Faridabad.</p>
+      </div>
+
+      <div class="city-cards-grid" id="cityCardsGrid">
+        <!-- Rendered dynamically by JS from CITY_LOCATIONS in data.js -->
       </div>
     </section>
 
@@ -374,11 +405,22 @@
               <input type="tel" id="bookPhone" placeholder="Mobile number" required />
             </div>
 
+            <div class="form-group">
+              <label for="bookCity">Select City / Region</label>
+              <select id="bookCity" required>
+                <option value="Delhi NCR" selected>Delhi NCR</option>
+                <option value="Noida & Gr. Noida">Noida & Greater Noida</option>
+                <option value="Gurugram">Gurugram (Gurgaon)</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Faridabad">Faridabad</option>
+              </select>
+            </div>
+
             <div class="form-row">
               <div class="form-group">
                 <label for="bookService">Service Needed</label>
                 <select id="bookService" required>
-                  <option value="Home Care at Home">Home Care (Attendants)</option>
+                  <option value="Home Care Service at Home">Home Care (Attendants)</option>
                   <option value="Elderly Care at Home">Elderly Care at Home</option>
                   <option value="Nursing Care at Home">Nursing Care (GNM/ANM)</option>
                   <option value="Medical Equipment on Rent">Medical Equipment</option>
@@ -449,7 +491,7 @@
       </div>
 
       <div class="footer-copy">
-        <small>© 2026 Anmol Care. All rights reserved. • Serving Delhi NCR, Gurugram & Noida</small>
+        <small>© 2026 Anmol Care. All rights reserved. • Serving Noida, Delhi NCR, Gurugram, Ghaziabad & Faridabad</small>
       </div>
     </div>
   </footer>

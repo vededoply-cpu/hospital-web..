@@ -1,8 +1,9 @@
-import { SERVICES, EQUIPMENT_LIST, WHY_US, TESTIMONIALS, FAQS } from './data.js';
+import { SERVICES, EQUIPMENT_LIST, WHY_US, TESTIMONIALS, FAQS, CITY_LOCATIONS } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderServices();
   renderEquipment();
+  renderCities();
   renderWhyUs();
   renderTestimonials();
   renderFAQs();
@@ -11,13 +12,43 @@ document.addEventListener('DOMContentLoaded', () => {
   setupModalEvents();
 });
 
+/* Render City Locations Grid */
+function renderCities() {
+  const container = document.getElementById('cityCardsGrid');
+  if (!container) return;
+
+  container.innerHTML = CITY_LOCATIONS.map(city => `
+    <div class="city-card">
+      <div class="city-card-header">
+        <div class="city-icon">${city.icon}</div>
+        <div>
+          <h4>${city.name}</h4>
+          <span class="city-speed-badge">${city.dispatchTime}</span>
+        </div>
+      </div>
+
+      <div class="city-areas-box">
+        <strong>Key Coverage Zones:</strong>
+        <div class="city-tags">
+          ${city.areas.map(a => `<span class="city-tag">${a}</span>`).join('')}
+        </div>
+      </div>
+
+      <div class="city-card-actions">
+        <a class="btn primary full btn-sm" href="tel:${city.phone}">Call Helpline (${city.phone})</a>
+        <a class="btn whatsapp full btn-sm" href="https://wa.me/91${city.phone}?text=${encodeURIComponent('Hello Anmol Care, I require home care service in ' + city.name)}" target="_blank">Book in ${city.name}</a>
+      </div>
+    </div>
+  `).join('');
+}
+
 /* Render Services Cards */
 function renderServices() {
   const container = document.getElementById('servicesGrid');
   if (!container) return;
 
   container.innerHTML = SERVICES.map(service => `
-    <a class="card" href="${service.href}">
+    <a class="card" href="${service.href}" title="View ${service.title} Details & Book">
       <div class="card-top-row">
         <i>${service.icon}</i>
         <span class="card-badge">${service.badge}</span>
@@ -29,7 +60,10 @@ function renderServices() {
         ${service.features.map(f => `<li>${f}</li>`).join('')}
       </ul>
 
-      <b style="margin-top:auto;">Get Service →</b>
+      <b>
+        <span>Get Service & Details</span>
+        <span class="arrow">→</span>
+      </b>
     </a>
   `).join('');
 }
@@ -146,8 +180,10 @@ function setupForms() {
       const name = document.getElementById('quickName').value.trim();
       const phone = document.getElementById('quickPhone').value.trim();
       const service = document.getElementById('quickService').value;
+      const cityEl = document.getElementById('quickCity');
+      const city = cityEl ? cityEl.value : 'Delhi NCR';
 
-      const message = `Hello Anmol Care, my name is ${name} (${phone}). I require quick assistance for: ${service}. Please contact me immediately.`;
+      const message = `Hello Anmol Care, my name is ${name} (${phone}) from ${city}. I require quick assistance for: ${service}. Please contact me immediately.`;
       const waUrl = `https://wa.me/919599747919?text=${encodeURIComponent(message)}`;
 
       window.open(waUrl, '_blank');
@@ -163,10 +199,12 @@ function setupForms() {
       const phone = document.getElementById('bookPhone').value.trim();
       const service = document.getElementById('bookService').value;
       const shift = document.getElementById('bookShift').value;
+      const cityEl = document.getElementById('bookCity');
+      const city = cityEl ? cityEl.value : 'Delhi NCR';
       const location = document.getElementById('bookLocation').value.trim();
       const notes = document.getElementById('bookNotes').value.trim();
 
-      let message = `Hello Anmol Care, I want to book a home care service:\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nShift: ${shift}\nLocation: ${location}`;
+      let message = `Hello Anmol Care, I want to book a home care service:\n\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nService: ${service}\nShift: ${shift}\nLocation: ${location}`;
       if (notes) {
         message += `\nDetails: ${notes}`;
       }
