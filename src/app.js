@@ -216,7 +216,7 @@ function setupForms() {
   }
 }
 
-/* Service Detail Modal logic */
+/* Modal logic for Service Detail & Quick Booking Popup */
 function setupModalEvents() {
   const modal = document.getElementById('serviceModal');
   const closeBtn = document.getElementById('modalClose');
@@ -230,6 +230,42 @@ function setupModalEvents() {
       if (e.target === modal) {
         modal.classList.remove('active');
       }
+    });
+  }
+
+  // Quick Booking Form Modal logic
+  const bookingModal = document.getElementById('bookingModal');
+  const bookingCloseBtn = document.getElementById('bookingModalClose');
+  const openTriggerBtn = document.getElementById('openBookingModal');
+  const heroBookBtns = document.querySelectorAll('.btn-hero-book');
+
+  if (bookingModal) {
+    if (bookingCloseBtn) {
+      bookingCloseBtn.addEventListener('click', () => {
+        bookingModal.classList.remove('active');
+      });
+    }
+
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        bookingModal.classList.remove('active');
+      }
+    });
+
+    if (openTriggerBtn) {
+      openTriggerBtn.addEventListener('click', () => {
+        bookingModal.classList.add('active');
+      });
+    }
+
+    heroBookBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const href = btn.getAttribute('href');
+        if (!href || href === '#contact' || href === '#') {
+          e.preventDefault();
+          bookingModal.classList.add('active');
+        }
+      });
     });
   }
 }

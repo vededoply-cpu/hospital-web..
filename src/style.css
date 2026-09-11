@@ -655,9 +655,116 @@ h1, h2, h3, h4 {
   font-weight: 800;
 }
 
-/* Hero Quick Card */
+/* Hero Quick Trigger Card (Replaces Full Form on Home Page Hero) */
 .hero-card-wrapper {
   perspective: 1000px;
+}
+
+.hero-trigger-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 28px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.hero-trigger-card:hover, .hero-trigger-card:focus {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(2, 132, 199, 0.3);
+  border-color: #38BDF8;
+}
+
+.hero-trigger-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heart-pulse-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #FFE4E6;
+  color: #E11D48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.25);
+  animation: pulse-heart 2s infinite;
+}
+
+@keyframes pulse-heart {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.trigger-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #059669;
+  background: #D1FAE5;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.hero-trigger-body h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.hero-trigger-body p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.hero-trigger-action {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+  color: #FFFFFF;
+  padding: 13px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+  transition: all 0.25s ease;
+}
+
+.hero-trigger-card:hover .hero-trigger-action {
+  background: linear-gradient(135deg, #0369A1 0%, #075985 100%);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45);
+}
+
+.hero-trigger-card:hover .hero-trigger-action .arrow {
+  transform: translateX(5px);
+}
+
+.hero-trigger-helplines {
+  font-size: 12.5px;
+  color: #64748B;
+  text-align: center;
+  border-top: 1px dashed #CBD5E1;
+  padding-top: 12px;
+}
+
+.hero-trigger-helplines strong {
+  color: #0284C7;
 }
 
 .hero-card {
