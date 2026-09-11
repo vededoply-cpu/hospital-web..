@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileMenu();
   setupForms();
   setupModalEvents();
+  setupHeroSlider();
 });
 
 /* Render City Locations Grid */
@@ -280,4 +281,57 @@ function openServiceModal(serviceId) {
   `;
 
   modal.classList.add('active');
+}
+
+/* Background Image Slider Logic */
+function setupHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('#heroSliderDots .dot');
+  if (!slides || slides.length === 0) return;
+
+  let currentSlide = 0;
+  let slideInterval = null;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    let next = (currentSlide + 1) % slides.length;
+    showSlide(next);
+  }
+
+  function startTimer() {
+    stopTimer();
+    slideInterval = setInterval(nextSlide, 4200); // Cycle every 4.2 seconds
+  }
+
+  function stopTimer() {
+    if (slideInterval) clearInterval(slideInterval);
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      showSlide(idx);
+      startTimer();
+    });
+  });
+
+  startTimer();
 }
