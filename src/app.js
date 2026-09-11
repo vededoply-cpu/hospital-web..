@@ -236,7 +236,7 @@ function setupModalEvents() {
   // Quick Booking Form Modal logic
   const bookingModal = document.getElementById('bookingModal');
   const bookingCloseBtn = document.getElementById('bookingModalClose');
-  const openTriggerBtn = document.getElementById('openBookingModal');
+  const triggerBtns = document.querySelectorAll('#openBookingModal, .hero-trigger-card, .open-booking-modal');
   const heroBookBtns = document.querySelectorAll('.btn-hero-book');
 
   if (bookingModal) {
@@ -252,11 +252,11 @@ function setupModalEvents() {
       }
     });
 
-    if (openTriggerBtn) {
-      openTriggerBtn.addEventListener('click', () => {
+    triggerBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
         bookingModal.classList.add('active');
       });
-    }
+    });
 
     heroBookBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
